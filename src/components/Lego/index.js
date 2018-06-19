@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
+import Container from './Container'
 
 export default (props) => (
   <Fragment>
-    <h1>Id: {props.match.params.id}</h1>
+    <Container />
   </Fragment>
 )
