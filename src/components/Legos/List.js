@@ -31,6 +31,13 @@ const Content = styled.section`
 
 export default props => (
   <Fragment>
+    <div>
+      <h1> Make a Character </h1>
+      <input type="text" placeholder="Name" />
+    </div>
+    <div>
+      <input type="text" placeholder="Price" />
+    </div>
     { props.legos.map(lego => (
       <LegoItem key={lego._id}>
         <Title><a href={`/${lego._id}`}>{lego.name}</a></Title>
