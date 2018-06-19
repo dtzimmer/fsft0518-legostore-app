@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
-export default ({ match }) => (
+export default (props) => (
   <Fragment>
-    <h1>Id: {match.params.id}</h1>
+    <h1>Id: {props.match.params.id}</h1>
   </Fragment>
 )

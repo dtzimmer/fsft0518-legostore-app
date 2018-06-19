@@ -9,7 +9,6 @@ const LegoItem = styled.div`
   flex-direction: column;
   margin: 8px;
 `
-
 const LegoHeader = styled.section`
   display: flex;
 `
@@ -22,11 +21,9 @@ const Image = styled.img`
   height: 50%;
   float: right;
 `
-
 const Description = styled.p`
   
 `
-
 const Content = styled.section`
   display: flex;
 `
@@ -38,6 +35,7 @@ export default props => (
       <LegoItem key={lego._id}>
         <Title><a href={`/${lego._id}`}>{lego.name}</a></Title>
         <Content>
+          {/*<Description>{lego.description}</Description>*/}
           <Description dangerouslySetInnerHTML={{__html: lego.description}} />
           <Image src={lego.imageUri} />
         </Content>

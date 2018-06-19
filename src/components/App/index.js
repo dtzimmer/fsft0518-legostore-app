@@ -9,13 +9,11 @@ const Header = styled.header`
   padding: 16px;
   color: white;
 `
-
 const Main = styled.main`
   flex: 1;
   padding: 16px;
 `
-
-const Footer = styled.header`
+const Footer = styled.footer`
   background: #cdcdcd;
   padding: 16px;
   color: #222222;
