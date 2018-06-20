@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from 'react'
 import { withRouter } from 'react-router-dom'
+// import Legoform from './Legoform'
 
 const getLego = async id =>
   await fetch(`http://localhost:3000/${id}`, {})
