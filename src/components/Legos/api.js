@@ -55,24 +55,32 @@ const del = async uri =>
         .then(response => response.json())
 
 
-
-
-
-
-
-
-
+/**
+ * Using Post function to post to API
+ * @param data
+ * @returns {Promise<Response>}
+ */
 
 export const createCharacter = async data =>
     await post(`http://localhost:3000`, data)
         .then(response => response.json())
 
-
+/**
+ * Returns a promise for the Legos
+ * @returns {Promise<any>}
+ */
 export const getLegos = async () => {
     const response = await fetch('http://localhost:3000', {mode: 'cors'})
     return await response.json()
 }
 
+
+/**
+ * Combines the createCharacter function and the getLegos function.
+ * Passes data to the createCharacter function and returns a promise to get Legos
+ * @param data
+ * @returns {Promise<any>}
+ */
 export const createAndGetAll = async data => {
     await createCharacter(data)
     return await getLegos()

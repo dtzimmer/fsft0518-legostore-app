@@ -29,9 +29,9 @@ const Content = styled.section`
 `
 
 
-export default props => (
+export default ({legos=[]}) => (
   <Fragment>
-    { props.legos.map(lego => (
+    { legos.map(lego => (
       <LegoItem key={lego._id}>
         <Title><a href={`/${lego._id}`}>{lego.name}</a></Title>
         <Content>
